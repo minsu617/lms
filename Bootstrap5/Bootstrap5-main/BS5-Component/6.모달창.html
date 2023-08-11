@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 부트스트랩 JS(스타일이 아닌 동적인 변화)-->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <title>모달창 Modal</title>
+    <style></style>
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <!-- NORMAL MODAL-->
+      <button
+        class="btn btn-danger"
+        data-bs-target="#ourModal"
+        data-bs-toggle="modal"
+      >
+        주문하기
+      </button>
+
+      <div class="modal fade" id="ourModal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">주문완료</h5>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>주문완료 되었습니다</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

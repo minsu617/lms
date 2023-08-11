@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 부트스트랩 JS(스타일이 아닌 동적인 변화)-->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+
+    <title>어코디언</title>
+    <style>
+      body {
+        padding: 3rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ACCORDION -->
+
+    <div class="accordion" id="accordionParent">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            data-bs-target="#collapseOne"
+            data-bs-toggle="collapse"
+          >
+            내일은 학원에 오나요?
+          </button>
+        </h2>
+        <div
+          class="accordion-collapse collapse"
+          id="collapseOne"
+          data-bs-parent="#accordionParent"
+        >
+          <div class="accordion-body">
+            <p>상황봐서! 일단은 옵니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            data-bs-target="#collapseTwo"
+            data-bs-toggle="collapse"
+          >
+            두번째 질문입니다.
+          </button>
+        </h2>
+        <div
+          class="accordion-collapse collapse"
+          id="collapseTwo"
+          data-bs-parent="#accordionParent"
+        >
+          <div class="accordion-body">
+            <p>주시나요?</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            data-bs-target="#collapseThree"
+            data-bs-toggle="collapse"
+          >
+            프론트엔드
+          </button>
+        </h2>
+        <div
+          class="accordion-collapse collapse"
+          id="collapseThree"
+          data-bs-parent="#accordionParent"
+        >
+          <div class="accordion-body">
+            <p>요하는 프로그램 및 포트폴리오 작성방법?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+  </body>
+</html>

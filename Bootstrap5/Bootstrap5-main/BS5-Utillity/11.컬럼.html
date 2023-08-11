@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title>컬럼</title>
+    <style>
+      div > div > div {
+        background: #f7941f;
+        padding: 1rem;
+        border: 1px solid white;
+        font-weight: 600;
+        color: white;
+        border-radius: 7px;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 컬럼(열)의 사이즈 동일 -->
+    <!-- 컨테이너>로우(12열)>컬럼(열) -->
+    <div class="container">
+      <div class="row">
+        <!-- 열의 사이즈가 따로 없을경우 열의 수만큼 등분-->
+        <div class="col">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+        <div class="col">3 of 3</div>
+      </div>
+      <div class="row">
+        <div class="col">1 of 2</div>
+        <div class="col">2 of 2</div>
+      </div>
+      <!-- 열의 중간에 auto가 있을때 -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col">1 of 3</div>
+          <div class="col-auto">Variable width content</div>
+          <div class="col">2 of 3</div>
+        </div>
+      </div>
+      <!-- 열의 사이즈를 명시했을때 -->
+      <div class="row">
+        <div class="col-3">column8/12</div>
+        <div class="col-9">column4/12</div>
+      </div>
+    </div>
+    <!-- 반응형: 화면 사이즈에 따라 변함-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">Column</div>
+      </div>
+    </div>
+    <!-- ROW COLUMNS -->
+
+    <div class="container">
+      <div class="row row-cols-3">
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+        <div class="col">column</div>
+      </div>
+    </div>
+  </body>
+</html>
